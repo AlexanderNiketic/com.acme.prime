@@ -1,0 +1,14 @@
+-buildpath: \
+	osgi.residential,\
+	osgi.core;version=4.3
+Private-Package: org.example.osgi
+Bundle-Activator: org.example.osgi.Activator
+Bundle-Version: 1.0.3.${tstamp}
+-runfw: org.apache.felix.framework;version='[5.4.0,5.4.0]'
+-runee: JavaSE-1.9
+-runbundles: \
+	org.apache.felix.gogo.shell,\
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.command,\
+	org.apache.felix.log,\
+	de.mnl.osgi.log.fwd2jul
